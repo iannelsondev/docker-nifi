@@ -1,2 +1,2 @@
 #!/bin/sh
-docker build -t in2rd/nifi:latest -t in2rd/nifi:1.0.0 .
+docker build -t in2rd/docker-nifi:latest -t in2rd/docker-nifi:1.0.0 .

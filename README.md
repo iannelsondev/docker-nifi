@@ -27,7 +27,7 @@ This repository contains a **Dockerfile** to create a containerized version of [
         -v $(pwd)/database:/home/nifi/database_repository \
         -v $(pwd)/content:/home/nifi/content_repository \
         -v $(pwd)/provenance:/home/nifi/provenance_repository \
-        in2rd/nifi
+        in2rd/docker-nifi
 
 1. 8080 is a common port, so script binds to 18080 for uniqueness
 
