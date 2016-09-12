@@ -5,10 +5,10 @@ MAINTAINER Ian Nelson <in2rd.code@gmail.com>
 RUN     apk add --update openjdk8-jre-base
 
 # Install NiFi and clean-up afterwards
-RUN     wget http://mirror.cogentco.com/pub/apache/nifi/0.7.0/nifi-0.7.0-bin.tar.gz && \
-            tar zxvf nifi-0.7.0-bin.tar.gz && \
-            mv nifi-0.7.0 /home/nifi && \
-            rm nifi-0.7.0-bin.tar.gz
+RUN     wget http://mirror.cogentco.com/pub/apache/nifi/1.0.0/nifi-1.0.0-bin.tar.gz && \
+            tar zxvf nifi-1.0.0-bin.tar.gz && \
+            mv nifi-1.0.0 /home/nifi && \
+            rm nifi-1.0.0-bin.tar.gz
 
 # Set the Java home environment variable
 RUN     export JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
