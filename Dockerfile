@@ -1,17 +1,11 @@
-FROM alpine:3.3
+FROM frolvlad/alpine-oraclejdk8
 MAINTAINER Ian Nelson <in2rd.code@gmail.com>
 
-# Install headless JDK from upstream
-RUN     apk add --update openjdk8-jre-base
-
 # Install NiFi and clean-up afterwards
-RUN     wget http://mirror.cogentco.com/pub/apache/nifi/1.0.0/nifi-1.0.0-bin.tar.gz && \
-            tar zxvf nifi-1.0.0-bin.tar.gz && \
-            mv nifi-1.0.0 /home/nifi && \
-            rm nifi-1.0.0-bin.tar.gz
-
-# Set the Java home environment variable
-RUN     export JAVA_HOME=/usr/lib/jvm/java-1.8-openjdk
+RUN     wget http://mirror.cogentco.com/pub/apache/nifi/1.0.0/nifi-1.1.0-bin.tar.gz && \
+            tar zxvf nifi-1.1.0-bin.tar.gz && \
+            mv nifi-1.1.0 /home/nifi && \
+            rm nifi-1.1.0-bin.tar.gz
 
 # Expose the UI/Tomcat port and 514 for syslog listening processor
 EXPOSE  8080 514
