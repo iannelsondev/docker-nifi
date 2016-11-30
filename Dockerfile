@@ -2,7 +2,7 @@ FROM frolvlad/alpine-oraclejdk8
 MAINTAINER Ian Nelson <in2rd.code@gmail.com>
 
 # Install NiFi and clean-up afterwards
-RUN     wget http://mirror.cogentco.com/pub/apache/nifi/1.0.0/nifi-1.1.0-bin.tar.gz && \
+RUN     wget http://www.gtlib.gatech.edu/pub/apache/nifi/1.1.0/nifi-1.1.0-bin.tar.gz && \
             tar zxvf nifi-1.1.0-bin.tar.gz && \
             mv nifi-1.1.0 /home/nifi && \
             rm nifi-1.1.0-bin.tar.gz
