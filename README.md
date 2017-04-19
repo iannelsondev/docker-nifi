@@ -6,7 +6,7 @@ This repository contains a **Dockerfile** to create a containerized version of [
 
 ### Base Docker Image
 
-* [alpine:3.3](https://hub.docker.com/_/alpine/)
+* [alpine:3.5](https://hub.docker.com/_/alpine/)
 
 
 ### Installation
